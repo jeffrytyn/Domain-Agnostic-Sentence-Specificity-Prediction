@@ -99,9 +99,9 @@ def get_pdtb(data_path,dom,dat,tv):
     s1['train']['path'] = os.path.join(data_path, 'data.txt')
     
     if dat=='twitter':
-        s1['test']['path'] = os.path.join(data_path, 'twitters.txt')
+        s1['test']['path'] = "all_sent.txt"
 
-        target['test']['path'] = "all_sent.txt"
+        target['test']['path'] = os.path.join(data_path,'twitterl.txt')
         targetv['test']['path'] = 'dataset/data/twitterv.txt'
         s1['unlab']['path'] ="all_sent.txt"
     elif dat=='yelp':
