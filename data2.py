@@ -103,18 +103,18 @@ def get_pdtb(data_path,dom,dat,tv):
 
         target['test']['path'] = os.path.join(data_path,'twitterl.txt')
         targetv['test']['path'] = 'dataset/data/twitterv.txt'
-        s1['unlab']['path'] ="all_sent.txt"
+        s1['unlab']['path'] ='dataset/data/twitterv.txt'
     elif dat=='yelp':
         s1['test']['path'] = "all_sent.txt"
         target['test']['path'] = os.path.join(data_path,'yelpl.txt')
         targetv['test']['path'] = 'dataset/data/yelpv.txt'
-        s1['unlab']['path'] = "all_sent.txt"
+        s1['unlab']['path'] = 'dataset/data/yelpv.txt'
     
     elif dat=='movie':
         s1['test']['path'] = "all_sent.txt"
         target['test']['path'] = os.path.join(data_path,'moviel.txt')
         targetv['test']['path'] = 'dataset/data/moviev.txt'
-        s1['unlab']['path'] = "all_sent.txt"
+        s1['unlab']['path'] = 'dataset/data/moviev.txt'
     
     s1['trainu']['path'] = os.path.join(data_path, 'aaai15unlabeled/all.60000.sents')
 
