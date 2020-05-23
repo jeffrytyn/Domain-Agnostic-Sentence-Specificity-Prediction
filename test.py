@@ -165,16 +165,16 @@ _,xsl = getFeatures(os.path.join(params.nlipath,'data.txt'))
 
 if params.test_data=="twitter":
     _,xst= getFeatures("all_sent.txt")
-    _,xsu = getFeatures("all_sent.txt")
+    _,xsu = getFeatures('dataset/data/twitteru.txt')
 
 
 elif params.test_data=="yelp":
     _,xst= getFeatures("all_sent.txt")
-    _,xsu = getFeatures("all_sent.txt")
+    _,xsu = getFeatures('dataset/data/yelpu.txt')
 
 elif params.test_data=="movie":
     _,xst= getFeatures("all_sent.txt")
-    _,xsu = getFeatures("all_sent.txt")
+    _,xsu = getFeatures('dataset/data/movieu.txt')
 
 
 _,xslu= getFeatures(os.path.join(params.nlipath, 'aaai15unlabeled/all.60000.sents'))
