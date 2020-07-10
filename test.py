@@ -164,16 +164,16 @@ train,valid, test,unlab ,trainu= get_pdtb(params.nlipath,params.dom,params.test_
 _,xsl = getFeatures(os.path.join(params.nlipath,'data.txt'))
 
 if params.test_data=="twitter":
-    _,xst= getFeatures("all_sent.txt")
+    _,xst= getFeatures("../all_sent/all_sent1.txt")
     _,xsu = getFeatures('dataset/data/twitteru.txt')
 
 
 elif params.test_data=="yelp":
-    _,xst= getFeatures("all_sent.txt")
+    _,xst= getFeatures("../all_sent/all_sent1.txt")
     _,xsu = getFeatures('dataset/data/yelpu.txt')
 
 elif params.test_data=="movie":
-    _,xst= getFeatures("all_sent.txt")
+    _,xst= getFeatures("../all_sent/all_sent1.txt")
     _,xsu = getFeatures('dataset/data/movieu.txt')
 
 
